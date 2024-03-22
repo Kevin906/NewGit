@@ -38,4 +38,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+//khai báo port để deploy lên cloud
+const port = process.env.PORT || 3001;
+
 module.exports = app;
